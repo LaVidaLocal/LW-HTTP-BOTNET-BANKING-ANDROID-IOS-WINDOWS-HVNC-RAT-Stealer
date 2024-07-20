@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-logo">
+            <img src="assets/img/hook.svg" alt="">
+    
+            <div class="header-body">
+                <h1 class="header-builder">
+                    <span>Hook Builder</span> <i>2.0.12 </i>
+                </h1>
+        
+                <div class="scheme-toggle">
+                    <label for="light">
+                        <input
+                            class="scheme-name"
+                            type="radio" name="theme"
+                            id="light" value="light"
+                        > <i class="icon-light"></i>
+                    </label>
+                    <label for="dark">
+                        <input
+                            class="scheme-name"
+                            type="radio" name="theme"
+                            id="dark" value="dark"
+                        > <i class="icon-dark"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="builder container">
+        <form action="" method="POST" class="container" enctype="multipart/form-data">
+            <div class="builder-row row">
+                <div class="col-lg-12">
+                    <div class="divider">
+                        <span><i class="icon-general"></i> General APK settings</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-backend"></i> URL backend connect:</label>
+                        <input class="input-style" name="ed_url" type="text" placeholder="http://185.215.113.25:3434">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-key"></i> Backend encryption key:</label>
+                        <input class="input-style" name="ed_encr" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-vector"></i> InitialVector:</label>
+                        <input class="input-style" name="ed_initcr" type="text" placeholder="InitialVector">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-terminal"></i> Application name:</label>
+                        <input class="input-style" name="ed_name" type="text" placeholder="Application">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-access"></i> Accessibility Service name:</label>
+                        <input class="input-style" name="ed_service_name" type="text" placeholder="Accessibility Service">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-tag"></i> Tag:</label>
+                        <input class="input-style" name="ed_tag" type="text" placeholder="tag">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-el mb-3">
+                        <label class="input-label"><i class="icon-terminal"></i> White app:</label>
+                        <select name="select" id="app" class="input-style">
+                            <option value="org.telegram.messenger">
+                                org.telegram.messenger
+                            </option>
+                            <option value="com.facebook.katana">
+                                com.facebook.katana
+                            </option>
+                            <option value="com.instagram.android">
+                                com.instagram.android
+                            </option>
+                            <option value="com.android.chrome">
+                                com.android.chrome
+                            </option>
+                            <option value="com.google.android.youtube">
+                                com.google.android.youtube
+                            </option>
+                            <option value="com.whatsapp">com.whatsapp
+                            </option>
+                            <option value="com.google.android.contacts">
+                                com.google.android.contacts
+                            </option>
+                            <option value="com.google.android.gm">
+                                com.google.android.gm
+                            </option>
+                            <option value="com.android.vending">
+                                com.android.vending
+                            </option>
+                            <option value="com.zhiliaoapp.musically">
+                                com.zhiliaoapp.musically
+                            </option>
+                            <option value="">   
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="builder-row row">
+                <div class="col-lg-12">
+                    <div class="divider">
+                        <span><i class="icon-gears"></i> Build parameters</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <label class="label-checkbox">
+                        <input name="ch_debug" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Ignore emulators debuggers</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_cis" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Ignore CIS</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_wait" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Add wait overlay</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_nomutate" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>No mutate and crypt code</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_injector" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Build for Injector</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_package" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Build package for Xiaomi</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <label class="label-checkbox">
+                        <input name="ch_crypt_apk" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>Crypt APK</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <label class="label-checkbox">
+                        <input name="ch_DebugRemoval" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>DebugRemoval</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_Goto" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>GoTo</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_LibEncryption" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>LibEncryption</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_CallIndirection" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>CallInDirection*</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_MethodRename" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>MethodRename</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_AssetEncryption" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>AssetEncryption</span>
+                    </label>
+                </div>
+                <div class="col-lg-3">
+                    <label class="label-checkbox">
+                        <input name="ch_MethodOverload" type="checkbox" class="input-checkbox">
+                        <div class="input-checkbox-status"></div>
+                        <span>MethodOverload*</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_ResStringEncryption" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>ResStringEncryption</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_ArithmeticBranch" type="checkbox" class="input-checkbox" >
+                        <div class="input-checkbox-status"></div>
+                        <span>ArithmeticBranch*</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_Reflection" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>Reflection</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_AdvancedReflection" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>AdvancedReflection</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_Reorder" type="checkbox" class="input-checkbox" >
+                        <div class="input-checkbox-status"></div>
+                        <span>Reorder*</span>
+                    </label>
+                    <label class="label-checkbox">
+                        <input name="ch_RandomManifest" type="checkbox" class="input-checkbox" checked>
+                        <div class="input-checkbox-status"></div>
+                        <span>RandomManifest</span>
+                    </label>
+                </div>
+                
+            </div>
+
+            <div class="builder-row row">
+                <div class="col-lg-12">
+                    <div class="divider">
+                        <span><i class="icon-upload"></i> Upload</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-upload mb-4">
+                    <span class="upload-label">Icon PNG</span>
+                    <input id="uploadIcon" name="upload_icon" type="file" class="input-file" accept="image/png">
+                    <label for="uploadIcon" class="input-upload button">
+                        <span><i class="icon-icon"></i> Select icon</span>
+                    </label>
+                </div>
+                <div class="col-lg-4 col-upload mb-4">
+                    <span class="upload-label">HTML Window</span>
+                    <input id="uploadHtmlWindow" name="upload_html" type="file" class="input-file" accept="text/html">
+                    <label for="uploadHtmlWindow" class="input-upload button">
+                        <span><i class="icon-html"></i> Select HTML</span>
+                    </label>
+
+                    <div class="selected-file"></div>
+                </div>
+                <div class="col-lg-4 col-upload mb-4">
+                    <span class="upload-label">HTML PopupWindow</span>
+                    <input id="uploadHtmlPopupWindow" name="upload_popup_html" type="file" class="input-file" accept="text/html">
+                    <label for="uploadHtmlPopupWindow" class="input-upload button">
+                        <span><i class="icon-html"></i> Select HTML</span>
+                    </label>
+
+                    <div class="selected-file"></div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+            <div class="builder-footer mt-4">
+                <button class="button button-lg">
+                    <i class="icon-terminal"></i> Build
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <section class="u-clearfix u-palette-1-light-2 u-section-1">
+        <center>
+            <table style="width:50%">
+                <tbody>
+                <tr>
+                    <th>Name Files</th>
+                    <th>Downloads</th>
+                </tr>
+                <!---SET-DATA-TABLES--->
+                </tbody>
+            </table>
+            <br><br>
+        </center>
+        <center>
+            <div><input class="btn btn-outline-success" onclick="window.location='index.php?deletefiles=1';" type="submit"
+                        value="Clean List"/></div>
+        </center>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
