@@ -1,0 +1,2 @@
+D:\GithubNew\5\Botnet1\LW-HTTP-BOTNET\LW-HTTP-Panel\Form11\obj\Debug\Form1.csproj.AssemblyReference.cache
+D:\GithubNew\5\Botnet1\LW-HTTP-BOTNET\LW-HTTP-Panel\Form11\obj\Debug\Form1.csproj.CoreCompileInputs.cache
